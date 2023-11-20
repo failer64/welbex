@@ -1,0 +1,167 @@
+//====================================================================================================
+.header {
+	// .header__container
+	&__container {
+		@media (min-width: $mobile) {
+			display: flex;
+			align-items: center;
+			min-height: rem(140);
+		}
+	}
+	// .header__logo
+	&__logo {
+		@media (min-width: $mobile) {
+			position: relative;
+			padding: rem(10) 0px;
+			&:not(:last-child) {
+				margin-right: rem(50);
+			}
+		}
+		@media (min-width: $tablet) {
+			&:not(:last-child) {
+				margin-right: rem(50);
+			}
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	// .header__menu
+	&__menu {
+		@media (min-width: $mobile) {
+			flex: 1 1 auto;
+		}
+	}
+	// .header__contacts
+	&__contacts {
+		@media (min-width: $pc) {
+			display: flex;
+			align-items: center;
+		}
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+}
+.logo {
+	// .logo__label
+	&__label {
+	}
+	// .logo__text
+	&__text {
+		@media (min-width: $mobile) {
+			position: absolute;
+			left: 0;
+			top: 100%;
+			font-size: rem(10);
+			line-height: math.div(12, 10);
+			font-weight: 300;
+			font-family: Montserrat;
+		}
+	}
+}
+.menu {
+	// .menu__list
+	&__list {
+		display: flex;
+		@media (min-width: $mobile) {
+			flex-wrap: wrap;
+			margin-right: rem(20);
+		}
+		@media (max-width: $mobile) {
+			overflow-x: auto;
+			min-height: rem(55);
+			align-items: center;
+		}
+	}
+	// .menu__item
+	&__item {
+		&:not(:last-child) {
+			margin-right: rem(30);
+		}
+
+		@media (max-width: $mobile) {
+			&:not(:last-child) {
+				margin-right: rem(16);
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+		font-weight: 500;
+		@media (any-hover: hover) {
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: rem(1);
+				top: 100%;
+				left: 0;
+				background-color: $mainColor;
+				transform: scale(0);
+				transition: transform 0.3s ease 0s;
+			}
+			&:hover {
+				&::after {
+					transform: scale(1);
+				}
+			}
+		}
+		@media (min-width: $mobile) {
+			display: inline-block;
+			padding: rem(5) 0;
+		}
+		@media (max-width: $mobile) {
+			text-transform: uppercase;
+			font-size: rem(12);
+		}
+	}
+}
+.contacts {
+	// .contacts__phone
+	&__phone {
+		@media (min-width: $mobile) {
+			display: inline-block;
+			white-space: nowrap;
+			font-weight: 500;
+			line-height: math.div(19, 16);
+			&:not(:last-child) {
+				margin: 0 0 rem(10) 0;
+			}
+		}
+		@media (min-width: $pc) {
+			&:not(:last-child) {
+				margin: 0 rem(47) 0 0;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	// .contacts__items
+	&__items {
+		@media (min-width: $mobile) {
+			display: flex;
+			align-items: center;
+		}
+	}
+	// .contacts__item
+	&__item {
+		@media (min-width: $tablet) {
+			&:not(:last-child) {
+				margin-right: rem(30);
+			}
+		}
+		@media (any-hover: hover) {
+			transition: transform 0.3s ease 0s;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+//====================================================================================================

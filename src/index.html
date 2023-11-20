@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Welbex"
+	})
+	<body>
+		<div class="wrapper">
+			<div class="wrapper__decor wrapper__decor_1">
+				<img src="@img/decor_01.svg" alt="decor">
+			</div>
+			<div class="wrapper__decor wrapper__decor_2">
+				<img src="@img/decor_02.svg" alt="decor">
+			</div>
+			<div class="wrapper__decor wrapper__decor_3">
+				<img src="@img/decor_03.svg" alt="decor">
+			</div>
+			<div class="wrapper__decor wrapper__decor_4">
+				<img src="@img/decor_04.svg" alt="decor">
+			</div>
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class='page__welbex welbex'>
+					<div class='welbex__container'>
+						<div class="welbex__column">
+							<h1 class="welbex__title">Зарабатывайте<br> больше<br> <span>с WELBEX</span></h1>
+							<div class="welbex__subtitle">Развиваем и контролируем<br> продажи за вас</div>
+						</div>
+						<div class="welbex__column">
+							<div class="welbex__gift">Вместе с <span>бесплатной</span><br> <span>консультацией</span> мы дарим:</div>
+							<div class="welbex__block block-welbex">
+								<div class="block-welbex__item">
+									<div class="block-welbex__title">Виджеты</div>
+									<div class="block-welbex__text">30 готовых решений</div>
+								</div>
+								<div class="block-welbex__item">
+									<div class="block-welbex__title">Dashboard</div>
+									<div class="block-welbex__text">с показателями вашего бизнеса</div>
+								</div>
+								<div class="block-welbex__item">
+									<div class="block-welbex__title">Skype Аудит</div>
+									<div class="block-welbex__text">отдела продаж и CRM системы</div>
+								</div>
+								<div class="block-welbex__item">
+									<div class="block-welbex__title">35 дней</div>
+									<div class="block-welbex__text">использования CRM</div>
+								</div>
+								<div class="block-welbex__label">
+									Skype аудит
+								</div>
+								<div class="block-welbex__label">
+									30 виджетов
+								</div>
+								<div class="block-welbex__label">
+									Dashboard
+								</div>
+								<div class="block-welbex__label">
+									Месяц аmoCRM
+								</div>
+							</div>
+							<a href="#" class="welbex__button">Получить консультацию</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
