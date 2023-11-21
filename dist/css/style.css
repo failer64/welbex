@@ -652,12 +652,14 @@ body {
   .page__welbex::before {
     content: "";
     position: absolute;
+    z-index: 1;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: lightgray 0% 0%/100px 100px repeat;
-    mix-blend-mode: overlay;
+    background: radial-gradient(304.35% 148.2% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+    -webkit-backdrop-filter: blur(7.5px);
+            backdrop-filter: blur(7.5px);
   }
 }
 
